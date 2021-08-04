@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.css';
+import './tarjetasCss.css';
 
 
-export default function App() {
+export default function Tarjeta() {
     return (
                 <div className="selector" id="dosci">
                     <div className="foto" id="fotoDosci">
