@@ -1,13 +1,21 @@
 
 import React from 'react';
-import Tarjeta from "./components/tarjetasProductos/tarjetas";
+import NavBar from './components/NavBar/navBar';
+import NavItem from './components/NavItems/NavItems';
 
-const App = () =>  {
-    return (
-        <div>
-            <Tarjeta/>
-        </div>
-    )
+
+class App extends React.Component{
+
+    render() {
+        return(
+            <NavBar/>
+        );
+
+       
+    }
+        
+        
+    
 
 }
 
