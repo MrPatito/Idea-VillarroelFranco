@@ -1,12 +1,26 @@
 body{
     margin: 0;
 }
+
+#root{
+  height: 100%;
+}
 @media only screen and (min-width: 481px) {
-    
+  .grilla {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    background-color: #f1f8fa;
+    grid-template-areas: "header header"
+ "nav estadisticas"
+ "foot foot";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 70px auto; }
+
     span {
       display: none; }
     nav {
-      
+      grid-area: nav;
       padding-top: 30px;
       display: flex;
       flex-direction: column;
@@ -33,3 +47,47 @@ body{
         nav .navBar .navItem :hover {
           transition: scale 1.2; }
         }
+
+
+  .container{
+    grid-area: estadisticas;
+    width: 150px;
+    height: 150px;
+    background: #185AD8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+  }
+  .counter{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .heading{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+  .botonContador{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.2em;
+    background: white;
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 10px rgb(51, 51, 51, 0.158);
+    border: none;
+    border-radius: 50px;
+  }
+  #incr{
+    bottom: -15%;
+    right: 10%;
+  }
+  #decr{
+    bottom: 10%;
+    right: -15%;
+  }

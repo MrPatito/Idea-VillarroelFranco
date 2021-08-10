@@ -1,5 +1,6 @@
 import React from 'react';
 import './navBar.css';
+import CartWidget from './CartWidget/cartWidget'
 
 // 
 let style = {
@@ -7,9 +8,9 @@ let style = {
      
 };
 
-const NavBar = (quePasa) =>{
+const NavBar = () =>{
     return(
-        <div>
+        
             <nav className='navBar'> 
                 <div className="easterEgg">
                 <h5>Muttuals</h5>
@@ -44,9 +45,8 @@ const NavBar = (quePasa) =>{
                             <span className="titulo">Home</span>
                         </a>
                 </li>
-                <button onClick={quePasa} className='btn btn-primary'>Apretar</button>
+                <CartWidget/>
             </nav>
-        </div>
         );
     
 }

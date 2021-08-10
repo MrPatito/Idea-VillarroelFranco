@@ -1,14 +1,19 @@
 
 import React from 'react';
+import Counter from './components/itemCount/itemCount';
 import NavBar from './components/NavBar/navBar';
-import NavItem from './components/NavItems/NavItems';
+
 
 
 class App extends React.Component{
 
     render() {
         return(
-            <NavBar/>
+            <div className='grilla'>
+               <NavBar/> 
+               <Counter/>
+            </div>
+            
         );
 
        
