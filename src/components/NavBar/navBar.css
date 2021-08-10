@@ -48,8 +48,11 @@ body{
           transition: scale 1.2; }
         }
 
-
+  /* .itemCount{
+    /* display: none; */
+  /* } */ 
   .container{
+    
     grid-area: estadisticas;
     width: 150px;
     height: 150px;
@@ -91,3 +94,4 @@ body{
     bottom: 10%;
     right: -15%;
   }
+

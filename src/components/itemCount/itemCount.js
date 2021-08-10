@@ -18,12 +18,15 @@ class Counter extends React.Component{
 
     render(){
         return(
-                        <div className='container'>
-                            <p className='heading'>Contador</p>
-                            <p className='counter'>{this.state.value}</p>
-                            <button onClick={this.buttonClicked} className='botonContador' id='incr'>+</button>
-                            <button onClick={this.buttonClicked1} className='botonContador' id='decr'>-</button>
-                        </div>
+                        // <div className='itemCount'>
+                            <div className='container'>
+                                <p className='heading'>Contador</p>
+                                <p className='counter'>{this.state.value}</p>
+                                <button onClick={this.buttonClicked} className='botonContador' id='incr'>+</button>
+                                <button onClick={this.buttonClicked1} className='botonContador' id='decr'>-</button>
+                            </div>
+                        // </div>
+                        
                         
                     );
     }
