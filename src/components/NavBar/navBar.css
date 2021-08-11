@@ -86,11 +86,11 @@ body{
     border: none;
     border-radius: 50px;
   }
-  #incr{
+  #decr{
     bottom: -15%;
     right: 10%;
   }
-  #decr{
+  #incr{
     bottom: 10%;
     right: -15%;
   }
