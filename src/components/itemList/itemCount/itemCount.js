@@ -12,12 +12,7 @@ const Counter = (props) => {
     
 
 
-    const caracteristicas = [
-        {nombbre: 'dosci', potoencia: '200W'},
-        {nombbre: 'treci', potoencia: '300W'},
-        {nombbre: 'cuatri', potoencia: '400W'},
-        {nombbre: 'ochi', potoencia: '800W'},
-    ]
+    
 
     function ShowInfo () {
         
@@ -31,7 +26,7 @@ const Counter = (props) => {
 
             return() => console.log('oculto')
         })
-   
+        
             return 'pablito clavo un clavito que clavito clavo pablito'
         
     }
