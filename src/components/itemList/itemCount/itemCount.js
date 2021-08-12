@@ -22,10 +22,12 @@ const Counter = (props) => {
     function ShowInfo () {
         
         useEffect(()=>{
+                setTimeout(()=>{
+                    console.log('desplegado')
+                },1000)
+                
             
-                return 'pablito clavo un clavito que clavito clavo pablito'
             
-            // console.log('desplegado')
 
             return() => console.log('oculto')
         })
