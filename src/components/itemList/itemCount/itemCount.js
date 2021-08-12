@@ -23,15 +23,14 @@ const Counter = (props) => {
         
         useEffect(()=>{
             
-            console.log('desplegado')
+                return 'pablito clavo un clavito que clavito clavo pablito'
+            
+            // console.log('desplegado')
 
             return() => console.log('oculto')
         })
-        
-            setTimeout(()=>{
-                return 'pablito clavo un clavito que clavito clavo pablito'
-            }, 1000) 
-        
+   
+            return 'pablito clavo un clavito que clavito clavo pablito'
         
     }
 
@@ -60,18 +59,18 @@ const Counter = (props) => {
     
 
     
-    
+
     
     return(
             <div className='container'>
                 <img className='fotos' src='https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=707&q=80'/>
                 <p className='heading'>{props.nombre}</p>
-                <p className='counter'>{contador}</p>
                 <p>{mounted && <ShowInfo/>}</p>
-                <button onClick={desplegar} className='botonInfo' id='info'>Info</button>
+                <p className='counter'>{contador}</p>
+                
                 <button onClick={incr} className='botonContador' id='incr'>+</button>
                 <button onClick={decr} className='botonContador' id='decr'>-</button>
-                
+                <button onClick={desplegar} className='botonInfo' id='info'>Info</button>
             </div>
             
         );

@@ -64,13 +64,15 @@ body{
     'Item4 Item5 Item6';
     /* width: 150px;
     height: 150px; */
+    margin: 0 15px 15px 15px;
+    padding: 0;
     background: #185AD8;
     color: white;
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-items: space-around;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     border-radius: 0 0 15px 15px;
   }
   .fotos{
@@ -81,10 +83,13 @@ body{
   justify-content: center;
   }
   .counter{
+    width: 50%;
+    padding-left: 10px;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
   }
   .heading{
+    padding-left: 10px;
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
