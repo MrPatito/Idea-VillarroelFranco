@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+
 const Counter = () => {
     const [contador, setContador] = useState(1);
     const [stock, setStock] = useState(7)

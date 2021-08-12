@@ -2,25 +2,24 @@ body{
     margin: 0;
 }
 
-#root{
-  height: 100%;
-}
+
 @media only screen and (min-width: 481px) {
-  .grilla {
+  .grilla{
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     display: grid;
     background-color: #f1f8fa;
     grid-template-areas: "header header"
- "nav estadisticas"
+ "nav contenido"
  "foot foot";
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: 70px auto; }
+    grid-template-columns: auto auto; }
 
     span {
       display: none; }
     nav {
-      grid-area: nav;
+      
       padding-top: 30px;
       display: flex;
       flex-direction: column;
@@ -34,6 +33,7 @@ body{
         transform: rotate(-90deg);
         color: #fce1cb; }
       nav .navBar {
+        
         padding: 0%;
         margin-top: 60px;
         list-style: none;
@@ -47,13 +47,14 @@ body{
         nav .navBar .navItem :hover {
           transition: scale 1.2; }
         }
-
+  .listItems{
+    grid-area: contenido ;
+    background-color: royalblue;
+  }
   /* .itemCount{
     /* display: none; */
   /* } */ 
   .container{
-    
-    grid-area: estadisticas;
     width: 150px;
     height: 150px;
     background: #185AD8;
