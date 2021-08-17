@@ -6,14 +6,14 @@ body{
 @media only screen and (min-width: 481px) {
   .grilla{
     
-    grid-template-rows: 150px auto 200px;
+    grid-template-rows: 150px auto auto;
     grid-template-columns: 120px auto; 
     grid-template-areas: "header header"
  "nav contenido"
  "foot foot";
 
 
- height: 100vh;
+ 
     margin: 0px;
     padding: 0px;
     display: grid;
@@ -49,23 +49,20 @@ body{
         nav .navBar .navItem :hover {
           transition: scale 1.2; }
         }
-  .listItem{
+  .listItemcContainer{
     grid-area: contenido ;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
-  /* .itemCount{
-    /* display: none; */
-  /* } */ 
-  .container{
-    grid-area: contenido;
-    grid-template-areas: 'Item1 Item2 Item3'
-    'Item4 Item5 Item6';
-    /* width: 150px;
-    height: 150px; */
+  .itemCount{
+    display: none;
+  } 
+  .producto{
+    
+    width: 150px;
+    height: auto;
     margin: 0 15px 15px 15px;
-    padding: 0;
+    padding-bottom:10px;
     background: #185AD8;
     color: white;
     display: inline-block;
@@ -95,6 +92,7 @@ body{
     font-size: 1rem;
   }
   .botonContador{
+    margin: 0 5px 10px 5px;
     width: 40px;
     height: 40px;
     /* position: absolute; */
@@ -106,6 +104,7 @@ body{
     border: none;
     border-radius: 50px;
   }
+  
   /* #decr{
     /* bottom: -15%;
     right: 10%; */
