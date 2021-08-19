@@ -1,9 +1,10 @@
 
 import React from 'react';
 
-import ItemListContainer from './components/itemList/itemListContainer';
-import NavBar from './components/NavBar/navBar';
+
+
 import './components/NavBar/navBar.css';
+import Router from './components/router/router';
 
 
 class App extends React.Component{
@@ -12,8 +13,7 @@ class App extends React.Component{
         return(
             
             <div className='grilla'>
-               <NavBar/>
-               <ItemListContainer/>
+                <Router/>
             </div>
             
         );

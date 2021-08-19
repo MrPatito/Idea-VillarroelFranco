@@ -40,10 +40,11 @@ body{
         
         padding: 0%;
         margin-top: 60px;
-        list-style: none;
+        list-style-type: none;
         flex-direction: column;
         justify-content: space-around;}
         nav .navBar .navItem {
+          list-style-type: none;
           width: 48px;
           transition: 1s; }
         nav .navBar .navItem :hover {

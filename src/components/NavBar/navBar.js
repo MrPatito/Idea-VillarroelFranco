@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import React from 'react';
 import './navBar.css';
 import CartWidget from './CartWidget/cartWidget'
@@ -16,10 +17,10 @@ const NavBar = () =>{
                 <h5>Muttuals</h5>
                 </div>
                 <li className="navItem">
-                        <a href="index.html" className="navLink">
+                        <Link to={`/`}>
                             <img src="./Multimedia/icons8-house-64.png" alt="Index"/>
-                            <span className="titulo">Home</span>
-                        </a>
+                        </Link> 
+                        
                 </li>
                 <li className="navItem">
                         <a href="index.html" className="navLink">
@@ -34,10 +35,10 @@ const NavBar = () =>{
                         </a>
                 </li>
                 <li className="navItem">
-                        <a href="index.html" className="navLink">
+                        <Link to={`/cart`}>
                             <img src="Multimedia/icons8-checkout-64.png" alt="Servicios"/>
-                            <span className="titulo">Home</span>
-                        </a>
+                        </Link>
+                            
                 </li>
                 <li className="navItem">
                         <a href="index.html" className="navLink">
