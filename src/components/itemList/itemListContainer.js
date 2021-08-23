@@ -14,26 +14,8 @@ function ItemListContainer(){
     useEffect(()=>{
         setTimeout(()=>{
             setProduct(items)
-        },5000)
-<<<<<<< Updated upstream
-    })
-=======
-        
-        
-        // setTimeout(function(){
-        //     setProduct(items)
-        
-        //     fetch(`${urlData}pokemon`)
-        //     .then((response) => response.json())
-        //     .then(data => console.log('data', data))
-        //     .catch((error)=> console.log("error", error));
-    
-    
-    })
-    
-        
-    
->>>>>>> Stashed changes
+        },2000)
+    },[])
     
 
 

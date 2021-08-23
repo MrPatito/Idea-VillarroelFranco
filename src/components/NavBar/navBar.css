@@ -49,8 +49,10 @@ body{
         nav .navBar .navItem :hover {
           transition: scale 1.2; }
         }
-  .listItem{
-    grid-area: contenido ;
+    .listItemContainer{
+      grid-area: contenido;
+    }
+      .listItem{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
