@@ -5,6 +5,8 @@ import React, { useEffect, useState } from 'react'
 function ItemDetail(props){
     const [info, setInfo] = useState([])
 
+    const urlData = "https://pokeapi.co/api/v2/" 
+
     const items = [
         {key: '1', nombre: 'dosci', potencia: '200W'},
         {key: '2', nombre: 'treci', potencia: '300W'},
@@ -14,11 +16,12 @@ function ItemDetail(props){
     ]
     
     useEffect(()=>{
-        setTimeout(()=>{
-                setInfo(items)
-            
-},1000)
-},)
+        
+                fetch(`${urlData}`)
+                .then((response) => response.json())
+                .then(data => console.log('data', data))
+                .catch((error)=> console.log("error", error));
+                }, []);
 
     
 

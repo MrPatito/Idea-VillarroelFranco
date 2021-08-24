@@ -5,7 +5,7 @@ import ItemList from './itemList'
 function ItemListContainer(){
     const [products, setProduct] = useState([])
 
-    const urlData = "https://pokeapi.co/api/v2/" 
+    
     const items = [
         {key: '1', nombre: 'dosci', potencia: '200W'},
         {key: '2', nombre: 'treci', potencia: '300W'},
@@ -18,10 +18,6 @@ function ItemListContainer(){
         setTimeout(function(){
             setProduct(items)
 
-        fetch(`${urlData}pokemon`)
-        .then((response) => response.json())
-        .then(data => console.log('data', data))
-        .catch((error)=> console.log("error", error));
         }, 2000);
         
     },[])
