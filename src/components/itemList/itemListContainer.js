@@ -17,13 +17,10 @@ function ItemListContainer(){
     useEffect(()=>{
         setTimeout(function(){
             setProduct(items)
-<<<<<<< HEAD
-        },2000)
-=======
+           
 
         }, 2000);
         
->>>>>>> SolucionandoGit
     },[])
     
 

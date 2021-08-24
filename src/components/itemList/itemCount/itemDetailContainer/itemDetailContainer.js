@@ -3,36 +3,35 @@ import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail/itemDetail'
 
 function ItemDetailContainer(){
-<<<<<<< HEAD
-    // const [products, setProduct] = useState([])
+        const [info, setInfo] = useState([])
+    
 
-    // const urlData = "https://pokeapi.co/api/v2/" 
-    // const items = [
-    //     {key: '1', nombre: 'dosci', potencia: '200W'},
-    //     {key: '2', nombre: 'treci', potencia: '300W'},
-    //     {key: '3', nombre: 'cuatri', potencia: '400W'},
-    //     {key: '4', nombre: 'ochi', potencia: '800W'},
-    //     {key: '5', nombre: 'milonga', potencia: '1000W'},
-    // ]
+        const urlData = "https://pokeapi.co/api/v2/pokemon/1"
 
-    // useEffect(()=>{
-    //     setTimeout(function(){
-    //         setProduct(items)
-
-    //         fetch(`${urlData}pokemon`)
-    //         .then((response) => response.json())
-    //         .then(data => console.log('data', data))
-    //         .catch((error)=> console.log("error", error));
-    //     }, 2000);
+        useEffect(()=>{
         
-    // },[])
-=======
->>>>>>> SolucionandoGit
+                fetch(`${urlData}`)
+                .then((response) => response.json())
+                .then(data =>{
+                    sessionStorage.setItem('datos', JSON.stringify(data))
+                    console.log('data', data)
+                   
+                    let datos = sessionStorage.getItem('datos')
+                    let datosParse = JSON.parse(datos)
+                    let ability = datosParse.abilities
+                    console.log(ability)
+                    console.log(datosParse)
+                    setInfo(ability)
+                })
+                
+                // .then(data => sessionStorage.setItem('datos', 'response'))
+                .catch((error)=> console.log("error", error));
+                },[] );
     
 
 
     return(
-            <ItemDetail/>
+            <ItemDetail dato={info}/>
     );
     
     }

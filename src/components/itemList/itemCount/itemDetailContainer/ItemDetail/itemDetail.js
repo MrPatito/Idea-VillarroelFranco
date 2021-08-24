@@ -1,67 +1,48 @@
 // import React from 'react'
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
+
 
 
 function ItemDetail(props){
-    const [info, setInfo] = useState([])
-<<<<<<< HEAD
-    const urlData = 'https://pokeapi.co/api/v2/pokemon/1'
-=======
+    // const [info, setInfo] = useState([])
+    
 
-    const urlData = "https://pokeapi.co/api/v2/pokemon/1" 
->>>>>>> SolucionandoGit
+    // const urlData = "https://pokeapi.co/api/v2/pokemon/1" 
 
     
     
-    useEffect(()=>{
-<<<<<<< HEAD
-        fetch(`${urlData}`)
-                        .then((response) => response.json())
-                        .then((response) => sessionStorage.setItem('response', response))
-                        // .then(data => console.log('data', response))
-                        .then(data => sessionStorage.setItem('data', data))
-                        
-                        .catch((error)=> console.log("error", error));
-                        
-        // setInfo = data;
+    // useEffect((props)=>{
         
-},[])
+    //             fetch(`${urlData}`)
+    //             .then((response) => response.json())
+    //             .then(data =>{
+    //                 sessionStorage.setItem('datos', JSON.stringify(data))
+    //                 console.log('data', data)
+                   
+    //                 let datos = sessionStorage.getItem('datos')
+    //                 let datosParse = JSON.parse(datos)
+    //                 let ability = datosParse.abilities
+    //                 console.log(ability)
+    //                 console.log(datosParse)
+    //                 setInfo(datosParse)
+    //             })
+                
+    //             // .then(data => sessionStorage.setItem('datos', 'response'))
+    //             .catch((error)=> console.log("error", error));
+    //             },[] );
 
-   let pokemons = sessionStorage.getItem('data')
+    // function datosApi (){
+        // let datos = sessionStorage.getItem('datos')
+    //     let datosParse = JSON.parse(datos);
+    //     console.log(datosParse)
 
-   console.log(pokemons)
-
-    
-=======
-        
-                fetch(`${urlData}`)
-                .then((response) => response.json())
-                .then(data =>{
-                    console.log('data', data)
-                    sessionStorage.setItem('datos', JSON.stringify(data))
-                })
-                // .then(data => sessionStorage.setItem('datos', 'response'))
-                .catch((error)=> console.log("error", error));
-                }, );
-
-    function datosApi (){
-        let datos = sessionStorage.getItem('datos')
-        let datosParse = JSON.parse(datos);
-        console.log(datosParse)
-
-    }
->>>>>>> SolucionandoGit
-
+    // }
+    // datosApi()
+    console.log(props.ability)
     return(
 
         
-<<<<<<< HEAD
-            <p>asdasdfa
-                
-            </p>
-=======
-            <p>{}</p>
->>>>>>> SolucionandoGit
+            <p>sdasdasdasd</p>
         
         
     );

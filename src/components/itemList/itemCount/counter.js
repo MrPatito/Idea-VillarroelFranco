@@ -9,16 +9,9 @@ const Counter = (props) => {
     const [contador, setContador] = useState(1);
     const [stock, setStock] = useState(7)
     const [mounted, setMounted] = useState(false)
-    const [detail, setDetail] = useState([])
     const desplegar = () => setMounted(!mounted)
 
-    const items = [
-        {key: '1', nombre: 'dosci', potencia: '200W'},
-        {key: '2', nombre: 'treci', potencia: '300W'},
-        {key: '3', nombre: 'cuatri', potencia: '400W'},
-        {key: '4', nombre: 'ochi', potencia: '800W'},
-        {key: '5', nombre: 'milonga', potencia: '1000W'},
-    ]
+    
     
     
 

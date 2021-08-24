@@ -50,15 +50,8 @@ body{
         nav .navBar .navItem :hover {
           transition: scale 1.2; }
         }
-<<<<<<< HEAD
-    .listItemContainer{
-      grid-area: contenido;
-    }
-      .listItem{
-=======
   .listItemcContainer{
     grid-area: contenido ;
->>>>>>> SolucionandoGit
     display: flex;
     flex-direction: row;
   }
