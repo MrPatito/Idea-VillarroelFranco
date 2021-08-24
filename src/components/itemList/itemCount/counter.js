@@ -28,7 +28,7 @@ const Counter = (props) => {
                 setTimeout(()=>{
                     if (mounted === false){
                         console.log('oculto')
-                        setDetail([])
+                        
                     
                     }
                     else{
