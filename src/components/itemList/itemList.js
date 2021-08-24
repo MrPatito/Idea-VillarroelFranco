@@ -1,5 +1,5 @@
-import React from 'react'
-import Counter from './itemCount/itemCount'
+// import React from 'react'
+import Counter from './itemCount/counter'
 
 
 const ItemList = ({items}) => {
@@ -10,7 +10,7 @@ const ItemList = ({items}) => {
 
 return(
     <div className='listItem'>
-        {items.map((item) => <Counter {...item} />)}
+        {items.map((item) => <Counter {...item}/>)}
     </div>
     
 );

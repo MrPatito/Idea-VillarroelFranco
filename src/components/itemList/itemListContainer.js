@@ -1,20 +1,29 @@
+import { set } from 'lodash'
 import React, { useEffect, useState } from 'react'
 import ItemList from './itemList'
 
 function ItemListContainer(){
     const [products, setProduct] = useState([])
 
+    
     const items = [
-        {key: '1', nombre: 'dosci', potoencia: '200W'},
-        {key: '2', nombre: 'treci', potoencia: '300W'},
-        {key: '3', nombre: 'cuatri', potoencia: '400W'},
-        {key: '4', nombre: 'ochi', potoencia: '800W'},
+        {key: '1', nombre: 'dosci', potencia: '200W'},
+        {key: '2', nombre: 'treci', potencia: '300W'},
+        {key: '3', nombre: 'cuatri', potencia: '400W'},
+        {key: '4', nombre: 'ochi', potencia: '800W'},
+        {key: '5', nombre: 'milonga', potencia: '1000W'},
     ]
 
     useEffect(()=>{
-        setTimeout(()=>{
+        setTimeout(function(){
             setProduct(items)
+<<<<<<< HEAD
         },2000)
+=======
+
+        }, 2000);
+        
+>>>>>>> SolucionandoGit
     },[])
     
 

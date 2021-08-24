@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail/itemDetail'
 
 function ItemDetailContainer(){
+<<<<<<< HEAD
     // const [products, setProduct] = useState([])
 
     // const urlData = "https://pokeapi.co/api/v2/" 
@@ -25,6 +26,8 @@ function ItemDetailContainer(){
     //     }, 2000);
         
     // },[])
+=======
+>>>>>>> SolucionandoGit
     
 
 
