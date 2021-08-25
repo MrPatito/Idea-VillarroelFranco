@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import React from 'react';
 import './navBar.css';
 import CartWidget from './CartWidget/cartWidget'
@@ -13,13 +13,15 @@ const NavBar = () =>{
     return(
         
             <nav className='navBar'> 
-                <div className="easterEgg">
-                <h5>Muttuals</h5>
+                <NavLink to='/'>
+                    <div className="easterEgg">
+                        <h5>Muttuals</h5>                
                 </div>
+                </NavLink>
                 <li className="navItem">
-                        <Link to={`/`}>
+                        <NavLink to="/">
                             <img src="./Multimedia/icons8-house-64.png" alt="Index"/>
-                        </Link> 
+                        </NavLink> 
                         
                 </li>
                 <li className="navItem">
@@ -35,9 +37,9 @@ const NavBar = () =>{
                         </a>
                 </li>
                 <li className="navItem">
-                        <Link to={`/cart`}>
+                        <NavLink to="/category/:Id">
                             <img src="Multimedia/icons8-checkout-64.png" alt="Servicios"/>
-                        </Link>
+                        </NavLink>
                             
                 </li>
                 <li className="navItem">

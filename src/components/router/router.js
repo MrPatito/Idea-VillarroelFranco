@@ -12,7 +12,7 @@ const Router = ()=>{
             <Switch>
                 
                 <Route exact path="/" component={Home}/>
-                <Route path="/cart" component={ItemListContainer}/>
+                <Route path="/category/:Id" component={ItemListContainer}/>
                 <Route path="*" component={NavBar}/>
             </Switch>
         </BrowserRouter>

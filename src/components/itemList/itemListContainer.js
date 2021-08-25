@@ -1,10 +1,12 @@
-import { set } from 'lodash'
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 import ItemList from './itemList'
 
 function ItemListContainer(){
     const [products, setProduct] = useState([])
-
+    
+    const {pagoId} = useParams();
+    console.log('pagoId', pagoId)
     
     const items = [
         {key: '1', nombre: 'dosci', potencia: '200W'},
@@ -22,8 +24,7 @@ function ItemListContainer(){
         }, 2000);
         
     },[])
-    
-
+   
 
     return(
 
