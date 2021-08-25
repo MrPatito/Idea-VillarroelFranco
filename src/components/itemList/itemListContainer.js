@@ -5,6 +5,7 @@ import ItemList from './itemList'
 function ItemListContainer(){
     const [products, setProduct] = useState([])
     
+    
     const {id} = useParams();
     console.log('categoryid', id)
     
