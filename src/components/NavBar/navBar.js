@@ -1,7 +1,10 @@
-import {NavLink} from 'react-router-dom'
+import {NavLink, useHistory} from 'react-router-dom'
 import React from 'react';
 import './navBar.css';
 import CartWidget from './CartWidget/cartWidget'
+
+
+
 
 // 
 let style = {
@@ -10,6 +13,14 @@ let style = {
 };
 
 const NavBar = () =>{
+    const history = useHistory();
+
+    const id = 152
+    const pagar = () => history.push(`/category/${id}`);
+
+    
+    
+    
     return(
         
             <nav className='navBar'> 
@@ -37,7 +48,7 @@ const NavBar = () =>{
                         </a>
                 </li>
                 <li className="navItem">
-                        <NavLink to="/category/:Id">
+                        <NavLink to={`/category/${id}`}>
                             <img src="Multimedia/icons8-checkout-64.png" alt="Servicios"/>
                         </NavLink>
                             
