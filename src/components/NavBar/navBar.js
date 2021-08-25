@@ -48,7 +48,7 @@ const NavBar = () =>{
                         </a>
                 </li>
                 <li className="navItem">
-                        <NavLink to='/category'>
+                        <NavLink to={`/category/${id}`}>
                             <img src="Multimedia/icons8-checkout-64.png" alt="Servicios"/>
                         </NavLink>
                             
