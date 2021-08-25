@@ -3,11 +3,11 @@ import React from 'react'
 
 
 
-function ItemDetail(props){
+const ItemDetail = (props) => {
     return(
 
         
-            <p>sdasdasdasd</p>
+            <p>{props.Object}</p>
         
         
     );
