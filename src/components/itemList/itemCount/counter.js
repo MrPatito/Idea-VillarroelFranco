@@ -9,13 +9,16 @@ const Counter = (props) => {
     const [contador, setContador] = useState(1);
     const [stock, setStock] = useState(7)
     const [mounted, setMounted] = useState(false)
-    const desplegar = () => setMounted(!mounted)
+    const [chart, setChart] = useState({
+        cant: "",
+        
+    })
+    const {cant} = chart
 
-    
-    
-    
-
-
+    const desplegar = (event) =>{
+        setMounted(!mounted)
+    }
+     
         
         useEffect(()=>{
                 setTimeout(()=>{
@@ -55,6 +58,10 @@ const Counter = (props) => {
     }
 
     
+    const handlechange = (event) =>{
+        console.log('valor ', event.target.value)
+        setChart({...chart, [event.target.name]: event.target.value});
+    }
 
     
 
@@ -65,6 +72,11 @@ const Counter = (props) => {
                 <p className='heading'>{props.nombre}</p>
                 {mounted && <ItemDetailContainer/>}
                 <p className='counter'>{contador}</p>
+                <form >
+                    <label>
+                        <input name='cant' onChange={handlechange} type='text' value={cant}></input>
+                    </label>
+                </form>
                 
                 <button onClick={incr} className='botonContador' id='incr'>+</button>
                 <button onClick={decr} className='botonContador' id='decr'>-</button>
