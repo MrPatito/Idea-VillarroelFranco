@@ -59,7 +59,8 @@ const Counter = (props) => {
 
     
     const handlechange = (event) =>{
-        console.log('valor ', event.target.value)
+        let eventValue =parseInt(event.target.value)
+        console.log(`valor`, eventValue)
         setChart({...chart, [event.target.name]: event.target.value});
     }
 
@@ -74,7 +75,7 @@ const Counter = (props) => {
                 <p className='counter'>{contador}</p>
                 <form >
                     <label>
-                        <input name='cant' onChange={handlechange} type='text' value={cant}></input>
+                        <input name='cant' onChange={handlechange} type='string' value={cant}></input>
                     </label>
                 </form>
                 
