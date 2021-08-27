@@ -5,7 +5,7 @@ import ItemDetailContainer from './itemDetailContainer/itemDetailContainer';
 
 
 
-const Counter = (props) => {
+                const Counter = (props) => {
     const [contador, setContador] = useState(1);
     const [stock, setStock] = useState(7)
     const [mounted, setMounted] = useState(false)
