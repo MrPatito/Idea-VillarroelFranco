@@ -1,13 +1,16 @@
 import React from 'react'
+import Ditail from './detail'
 
 
 
 
-const ItemDetail = (props) => {
+const ItemDetail = ({ability}) => {
     return(
 
-        
-            <p>{props.Object}</p>
+                <div>
+                        {ability.map((abilidad)=> <Ditail {...abilidad}/>)}
+                </div>
+            
         
         
     );
