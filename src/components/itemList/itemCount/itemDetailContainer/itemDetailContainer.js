@@ -8,7 +8,7 @@ const ItemDetailContainer = () =>{
         const urlData = "https://pokeapi.co/api/v2/pokemon/1"
         console.log(info)
         useEffect(()=>{
-                console.log(info)
+
                 fetch(`${urlData}`)
                 .then((response) => response.json())
                 .then(data =>{
@@ -25,17 +25,15 @@ const ItemDetailContainer = () =>{
                     
                 })
                 
-                // .then(data => sessionStorage.setItem('datos', 'response'))
                 .catch((error)=> console.log("error", error));
         }, []);
     
                 
 
-    return(
-            <div>
-                <ItemDetail ability={info}/>
-            </div>
-           
+    return (
+      <div>
+        <ItemDetail datosParse={info} />
+      </div>
     );
     
     }

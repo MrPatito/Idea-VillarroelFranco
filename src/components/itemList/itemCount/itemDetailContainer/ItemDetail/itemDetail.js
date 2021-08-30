@@ -5,14 +5,10 @@ import Ditail from './detail'
 
 
 const ItemDetail = ({ability}) => {
-    return(
-
-                <div>
-                        {ability.map((abilidad)=> <Ditail {...abilidad}/>)}
-                </div>
-            
-        
-        
+    return (
+      <div>
+        <Ditail />
+      </div>
     );
     
     }

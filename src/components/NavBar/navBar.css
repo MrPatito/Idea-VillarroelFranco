@@ -59,19 +59,25 @@ body{
     display: none;
   } 
   .producto{
-    
-    width: 150px;
+    width: 13rem;
     height: auto;
     margin: 0 15px 15px 15px;
     padding-bottom:10px;
     background: #185AD8;
     color: white;
     display: inline-block;
-    justify-content: center;
+    justify-content: space-around;
     align-items: space-around;
     flex-direction: column;
     /* position: relative; */
     border-radius: 0 0 15px 15px;
+  }
+  .botonContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
   }
   .fotos{
     height: auto;
@@ -105,7 +111,33 @@ body{
     border: none;
     border-radius: 50px;
   }
-  
+  .form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  .cantidad {
+    border-radius: 10px;
+    height: 100%;
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .btnAgregar {
+    margin: 0 5px 10px 5px;
+    width: 90%;
+    height: 40px;
+    /* position: absolute; */
+    cursor: pointer;
+    font-size: 1.2em;
+    background: white;
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 10px rgb(51, 51, 51, 0.158);
+    border: none;
+    border-radius: 50px;
+  }
   /* #decr{
     /* bottom: -15%;
     right: 10%; */
