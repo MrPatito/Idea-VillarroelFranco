@@ -1,4 +1,4 @@
-import {NavLink, useHistory} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import React from 'react';
 import './navBar.css';
 import CartWidget from './CartWidget/cartWidget'
@@ -7,16 +7,13 @@ import CartWidget from './CartWidget/cartWidget'
 
 
 // 
-let style = {
-    
-     
-};
+
 
 const NavBar = () =>{
-    const history = useHistory();
+    // const history = useHistory();
 
     const id = 152
-    const pagar = () => history.push(`/category/${id}`);
+    // const pagar = () => history.push(`/category/${id}`);
 
     
     

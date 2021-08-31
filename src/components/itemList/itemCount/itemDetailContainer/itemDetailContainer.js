@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-// import React from 'react'
 import ItemDetail from './ItemDetail/itemDetail'
-const ItemDetailContainer = ({ability}) =>{
+
+const ItemDetailContainer = () =>{
         const [info, setInfo] = useState([])
     
 
         const urlData = "https://pokeapi.co/api/v2/pokemon/1"
-
+        console.log(info)
         useEffect(()=>{
-        
+
                 fetch(`${urlData}`)
                 .then((response) => response.json())
                 .then(data =>{
@@ -22,19 +22,18 @@ const ItemDetailContainer = ({ability}) =>{
                     console.log(datosParse)
                     setInfo(ability)
                     
+                    
                 })
                 
-                // .then(data => sessionStorage.setItem('datos', 'response'))
                 .catch((error)=> console.log("error", error));
-                },[] );
+        }, []);
     
-                console.log(info)
+                
 
-    return(
-            <div>
-                <ItemDetail/>
-            </div>
-           
+    return (
+      <div>
+        <ItemDetail datosParse={info} />
+      </div>
     );
     
     }

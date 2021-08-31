@@ -1,15 +1,14 @@
 import React from 'react'
+import Ditail from './detail'
 
 
 
 
-const ItemDetail = (props) => {
-    return(
-
-        
-            <p>{props.Object}</p>
-        
-        
+const ItemDetail = ({ability}) => {
+    return (
+      <div>
+        <Ditail />
+      </div>
     );
     
     }
